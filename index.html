@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" type="image/png" href="http://amolastsunderes.files.wordpress.com/2013/07/favicon.png" />
+		<title>Home Page</title>
+		<style type="text/css">
+			body{
+				border:10px solid #000;
+				background-color:#000;
+			}
+			#sidebar{
+				max-width:15%;
+				display:relative;
+				float:left;				
+			}
+			.TopSites{
+				border:1px solid #000;
+				height:75px;
+				width:250px;
+				background-size:cover;
+				background-repeat:no-repeat;
+				padding:none;
+			}
+			div#Facebook.NotSelected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/facebook_01.png");
+			}
+			div#GrooveShark.NotSelected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/grooveshark_01.png");
+			}
+			div#YouTube.NotSelected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/youtube_0.png");
+			}
+			div#AnimeTake.NotSelected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/animetake_0.png");
+			}
+			div#MyAnimeList.NotSelected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/myanimelist_0.png");
+			}
+			div#TechnoBuffalo.NotSelected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/technobuffalo_02.png");
+			}
+			div#Reddit.NotSelected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/reddit_0.png");
+			}
+			div#Gmail.NotSelected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/gmail_0.png");
+			}
+			div#Facebook.Selected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/facebook_1.png");
+			}
+			div#GrooveShark.Selected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/grooveshark_1.png");
+			}
+			div#YouTube.Selected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/youtube_1.png");
+			}
+			div#AnimeTake.Selected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/animetake_1.png");
+			}
+			div#MyAnimeList.Selected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/myanimelist_1.png");
+			}
+			div#TechnoBuffalo.Selected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/technobuffalo_1.png");
+			}
+			div#Reddit.Selected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/reddit_1.png");
+			}
+			div#Gmail.Selected{
+				background-image:url("http://amolastsunderes.files.wordpress.com/2013/07/gmail_01.png");
+			}
+			#frame {
+				display: inline-block;
+				float:right;
+  				width: 80.8%;
+				height:613.5px;
+				border:1px solid #000;;
+			}
+        </style>
+        <script src="jQuery.js" type="text/javascript"></script>
+        <script>
+			$(document).ready(function(){
+				$('.TopSites').mouseenter(function(){
+					$(this).removeClass("NotSelected");
+					$(this).addClass("Selected");
+				});
+				$('.TopSites').mouseleave(function(){
+					$(this).removeClass("Selected");
+					$(this).addClass("NotSelected");
+				});
+			});
+        </script>
+	</head>
+	<body>
+    	<div id='sidebar'>
+        	<a href="http://www.facebook.com/"><div class="NotSelected TopSites" id="Facebook"></div></a>
+            <a href="http://www.grooveshark.com/"><div class="NotSelected TopSites" id="GrooveShark"></div></a>
+            <a href="http://www.youtube.com/"><div class="NotSelected TopSites" id="YouTube"></div></a>
+            <a href="http://www.animetake.com/"><div class="NotSelected TopSites" id="AnimeTake"></div></a>
+            <a href="http://www.myanimelist.net/"><div class="NotSelected TopSites" id="MyAnimeList"></div></a>
+            <a href="http://www.technobuffalo.com/"><div class="NotSelected TopSites" id="TechnoBuffalo"></div></a>
+            <a href="http://reddit.com/r/leagueoflegends"><div class="NotSelected TopSites" id="Reddit"></div></a>
+            <a href="http://mail.google.com/"><div class="NotSelected TopSites" id="Gmail"></div></a>
+         </div>
+         <iframe id="frame" src="http://catalog.neet.tv/g/">
+		</iframe>
+	</body>
+</html>
